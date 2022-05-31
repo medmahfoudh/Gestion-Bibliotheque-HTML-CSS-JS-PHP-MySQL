@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Ubuntu:wght@300&display=swap');
+
+* {
+  font-family: 'Poppins' , sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+ 
+}
+
+.glass {
+  background: white;
+  
+  width: 110%;
+  height: 92vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 5;
+  backdrop-filter: blur(1rem);
+  display: flex;
+
+  
+  margin:4vh 4vh 4vh 4vh;
+  box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+              
+  border-radius: 15px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.glass .card{
+  position: relative;
+  display: flex;
+  min-width: 200px;
+  height: 450px;
+  /*
+  box-shadow: inset 5px 5px 5px  rgba(0,0,0,0.05),
+              inset -5px -5px 5px rgba(255,255,255,0.5),
+              -5px -5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(255,255,255,0.5);
+  border-radius: 15px; */
+  top: 1%;
+  left: 8%;
+} 
+.container .card .box{
+  position: absolute;
+  top: 2%;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+ 
+  transition: 0.5s;
+}
+.container .card:hover .box{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg , #ff8000,#3912b8);
+}
+.container .card .box .content{
+  padding: 20px;
+  text-align: center;
+
+}
+.container .card .box .content h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0,0,0,0.05);
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container .card .box .content img{
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  transition: 0.5s;
+  width: 60px;
+  height: 60px;
+}
+
+.container .card:hover .box .content h2{
+  color: rgba(0,0,0,0.05);
+}
+.container .card .box .content h3{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content h4{
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card:hover .box .content h4{
+  text-transform: uppercase;
+  font-size: 1em;
+  color: rgb(0, 255, 64);
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f7;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card:hover .box .content a{
+  background: #09ea63;
+}
+
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+  color: #ffff;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.image img{
+  position: absolute;
+  display: flex;
+  width: 60vh;
+  height: 60vh;
+  top: 15%;
+  right: 1%;
+  left: 60%;
+}
+
+/*
+.dashboard {
+  flex: 1;
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  width: 100vh;
+  height: 10vh;
+} */
+/*
+.card {
+  display: absolute;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+  width: 4rem;
+} */
+
