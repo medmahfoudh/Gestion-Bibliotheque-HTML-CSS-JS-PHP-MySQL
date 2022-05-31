@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Ubuntu:wght@300&display=swap');
+
+* {
+  font-family: 'Poppins' , sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  
+  width: 110%;
+  height: 92vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 5;
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin:4vh 4vh 4vh 4vh;
+  box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+              
+  border-radius: 15px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.glass .card{
+  position: relative;
+  min-width: 340px;
+  height: 440px;
+  /*
+  box-shadow: inset 5px 5px 5px  rgba(0,0,0,0.05),
+              inset -5px -5px 5px rgba(255,255,255,0.5),
+              -5px -5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(255,255,255,0.5);
+  border-radius: 15px; */ 
+} 
+.container .card .box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.container .card:hover .box{
+  transform: translateY(-25px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg , #b95ce4,#4f29cd);
+}
+.container .card .box .content{
+  padding: 20px;
+  text-align: center;
+
+}
+.container .card .box .content h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0,0,0,0.05);
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content img{
+  position: absolute;
+  top: -10px;
+  right: 100px;
+  transition: 0.5s;
+  width: 100px;
+  
+
+}
+
+.container .card:hover .box .content h2{
+  color: rgba(0,0,0,0.05);
+}
+.container .card .box .content h3{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card .box .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f7;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .card:hover .box .content a{
+  background: #09ea63;
+}
+.container .glass .dec a{
+  position: absolute;
+  display: flex;
+  padding: 8px 20px;
+  background: #03a9f7;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  font-family: 'Ubuntu', sans-serif;
+  right: 34rem;
+  bottom: 1rem;
+
+}
+.container .glass .dec:hover a{
+    background: #ea0909;
+
+}
+
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+  color: #ffff;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.image img{
+  width: 90vh;
+  height: 60vh;
+  top: 30%;
+}
+footer span{
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  right: 43%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+

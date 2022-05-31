@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=PT+Sans&family=Playfair+Display:ital,wght@1,500&family=Ubuntu:wght@300&display=swap');
+* {
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/  
+}
+
+.container {
+    font-family: "Ubuntu", sans-serif;
+    /*min-height: 100vh;*/
+    height: 100%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glass {
+    background: white;
+    
+    width: 110%;
+    height: auto;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 5;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin:4vh 4vh 4vh 4vh;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+                
+    border-radius: 15px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  .container .glass table{
+      width: 80%;
+  }
+  .container .glass table tr{
+    position: relative;
+    min-width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background: #56a7c7cc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+  .container .glass table tr td{
+    font-family: 'PT Sans', sans-serif;
+  }
+   .container .glass table tr td a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f7;
+    
+    border-radius: 20px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 400;
+    
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .container .glass table tr td a:hover{
+    transition: 0.3s;
+    background: #09ea63;
+    
+  }
+  .container .glass table tr th{
+    background: #03a9f7;
+    
+  }
+  .container .glass .vide a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f7;
+    border-radius: 20px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif; 
+    left: 5rem;
+  }
+  .container .glass .vide a:hover{
+    transition: 0.3s;
+    background: #09ea63;
+    
+  }
+
+
+  .container .glass .vide h4{
+    font-family: 'Ubuntu', sans-serif; 
+    
+  }
